@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Home page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"/>
+   <style>
+    :root{
+      --darkblue: #252b42;
+      --orange: #ffa62b;
+      --grey: #737373;
+    }
+   body{
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin: 0;
+   }
+   ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+   }
+   .top-banner {
+    padding: 40px 0 120px;
+    background-image: url("img\background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   }
+   .header {
+    width: 100%;
+    display: flex;
+    max-width: 1050px;
+    margin-bottom: 160px;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .nav-bar.header-nav.nav-icons {
+    display: flex;
+    gap: 21px;
+   }
+   .header-nav{
+    margin-left: auto;
+    align-items: center;
+   }
+   .nav-icons{
+    margin-left: 40px;
+    align-items: center;
+   }
+   li a {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+   }
+   .container{
+    display: flex;
+    max-width: 1050px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+   }
+   .content{
+    max-width: 570px;
+   }
+   .top-banner__headline.top-banner__describe{
+    color: #ffffff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 58px;
+    font-style: normal;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+   }
+   .top-banner__describe {
+    font-size: 20px;
+    line-height: 30px;
+   }
+   .action-buttons {
+    display: flex;
+    justify-content: center;
+   }
+   .button-getquote.button-learn{
+   color: #ffffff;
+   background-color: var(--orange);
+   padding: 10px 36px;
+   border-radius: 37px;
+   font-size: 14px;
+   letter-spacing: 0.2px;
+   line-height: 28px;
+   gap: 10px;
+   border: 1px solid white;
+   cursor: pointer;
+   }
+   .button-getquote {
+    border: none;
+   }
+   .button-learn {
+    background-color: transparent;
+   }
+   @media screen and (min-width:360px) and (max-width:768px) {
+   }
+    body {
+      background-position: center;
+    }
+      .header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+        line-height: 3em;
+      }
+      .header-nav{
+        margin-left: 0 auto;
+      }
+      .nav-icons {
+        margin-left: 0;
+      }
+      .top-banner__describe{
+        font-size:1.2em;
+        line-height: 3em;
+        margin-top: 70px;
+      }
+      .top-banner__describe{
+        font-size: 0.6em;
+        line-height: 1.5em;
+      }
+      .action-buttons{
+        flex-direction: column;
+        align-items: center;
+      }
+      .button-getquote.button-learn{
+        font-size: 0.5em;
+        line-height: 1.5em;
+        padding: 10px 36px;
+      }
+      .button-learn{
+        margin-top: 25px;
+      }
+  .why-us {
+    background-color: var(--darkblue);
+    background-size: cover;
+    display: flex;
+    padding: 0 195px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: 100px 0;
+  }
+  .cards__title{
+    font-size: 40px;
+    line-height: 57px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .cards__describe{
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    width: 470px;
+  }
+  .cards-grid{
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 45px;
+    gap: 30px;
+    border: 1px;
+    background-color: var(--darkblue);
+  }
+.cards-grid > div{
+  text-align: center;
+  background-color: white;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  padding: 35px 40px;
+  align-items: flex-start;
+  gap: 15px;
+}
+.cards__header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 15px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--darkblue);
+}
+.header__icons{
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.cards__content{
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  width: 245px;
+  color: var(--grey);
+}
+.footer__initial{
+  background-color: #252b42;
+}
+.footer__secondary{
+  background-color: #16697a;
+}
+.footer__content{
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 'logo socialnetwork'
+                       'divider divider'
+                       'main main';
+                       width: 100%;
+}
+.footer__divider{
+  background-color: #364067;
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  grid-area: divider;
+}
+.logo__image{
+  height: 24px;
+} 
+.footer__logo{
+  grid-area: logo;
+  margin: 55px 0;
+}
+.footer__socials{
+  grid-area: socials;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-self: end;
+  margin: 55px 0;
+}
+.socials-link{
+  display: flex;
+}
+.footer__main-content{
+  grid-area: main;
+  display: flex;
+  margin: 70px 0;
+  gap: 30px;
+}
+.footer__nav{
+  display: flex;
+  gap: 30px;
+}
+.footer__title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.footer__nav.nav__list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav__list a:hover{
+  text-decoration: underline;
+}
+.nav__list-item a{
+  line-height: 24px;
+  color: #bdbdbd;
+}
+.describe__form{
+  display: flex;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+.describe__form.form__input{
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 15px 20px;
+  border: none;
+}
+.describe__form.form__submit{
+  background-color: var(--orange);
+  font-size: 14px;
+  line-height: 28px;
+  height: 58px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.footer__subscrition.title{
+  color: #bdbdbd;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+.footer__secondary.container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__secondary-title{
+  display: flex;
+  padding: 9px 0px;
+  line-height: 24px;
+  width: 600px;
+}
+.best-business-service{
+  background: linear-gradient(rgba(37,43,66,1), rgba(22,105,122,1));
+}
+.video{
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.video-button{
+  display: flex;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+  background-color: #00a0c1;
+  cursor: pointer;
+}
+.video__title.team__title.clients__title{
+  width: 460px;
+  font-weight: 700;
+  line-height: 57px;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+.video__subtitle.team__subtitle.clients__subtitle{
+  width: 470px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.video__content.team__content.clients__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 864px;
+  gap: 10px;
+  margin-top: 80px;
+}
+@media screen and (min-width:360px) and (max-width:768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .video__content{
+    display: flex;
+    width: 330px;
+    margin: 0;
+    margin-bottom: 60px;
+    gap: 10px;
+  }
+  .video__title{
+    width: 308px;
+    margin: 0;
+    margin-top: 45px;
+  }
+  .video__subtitle{
+    width: 225px;
+    margin: 0;
+  }
+   }
+   .clients{
+    background-color: var(--darkblue);
+   }
+   .clients__subtitle{
+    margin-bottom: 35px;
+   }
+   .cards__content{
+    gap: 20px;
+   }
+   .clients-img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    float: left;
+    border: 1px;
+    margin-right: 15px;
+   }
+   .clients-name.clients-job{
+    display: flex;
+    flex-direction: column;
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+   }
+   .clients-job{
+    color: var(--darkblue);
+   }
+   .clients-review{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+    margin: 20px 0;
+   }
+   .clients.cards{
+    padding: 30px 35px;
+    border: 1px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    margin-top: 35px;
+   }
+   .rating{
+    width: 110.07px;
+    height: 22px;
+   }
+   @media screen and (min-width:360px) and (max-width:768px){
+    .clients__content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 45px;
+    }
+    .clients__title{
+      width: 227px;
+    }
+    .clients__subtitle{
+      width: 262px;
+      margin-bottom: 60px;
+    }
+    .clients.cards-grid{
+      gap: 30px;
+      margin: 0;
+    }
+    .clients.cards{
+      margin: 0;
+    }
+   }
+   .team{
+    background-color: var(--darkblue);
+   }
+   .team__img{
+    width: 328px;
+    height: 231px;
+   }
+   .team.cards{
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+   }
+   .team.cards__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 5px;
+   }
+   .team__name{
+    color: var(--darkblue);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0 auto;
+   }
+   .team__job{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    color: var(#737373);
+   }
+   .team a {
+   text-decoration: none;
+   }
+   .team__socials{
+    height: 24px;
+   }
+   .team__socials-icn{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+   }
+   .team.cards{
+    margin-bottom: 80px;
+   }
+   .team__img-mobile{
+    display: none;
+   }
+   @media screen and (min-width:360px) and (max-width:768px){
+    .team__content{
+      margin: 0;
+    }
+    .team__title{
+      width: 203px;
+      margin-top: 45px;
+    }
+    .team__subtitle{
+      width: 262px;
+      margin: 0;
+    }
+    .cards-grid{
+      grid-template-columns: auto;
+      margin-bottom: 45px;
+    }
+    .team.cards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 0;
+    }
+    .team__img{
+      display: none;
+    }
+    .team__img-mobile{
+      display: flex;
+    }
+   }
+   .appointment__subtitle{
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0px;
+   }
+   .appointment__title{
+    display: flex;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin: 0px;
+   }
+   .form__data{
+    background: #f9f9f9;
+    padding: 15px 0px 15px 20px;
+    width: 250px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    outline-color: #bdbdbd;
+   }
+   .form__select{
+   background-image: url(img\arrow_appointment.svg);
+   background-repeat: no-repeat;
+   background-position: right 1rem center;
+   background: #f9f9f9;
+   color: #f9f9f9;
+   outline-color: #bdbdbd;
+   padding: 15px 0px 15px 20px;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   appearance: none;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   font-family: Montserrat;
+   }
+   .form__textarea{
+    padding: 15px 0px 100px 20px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    grid-column: 1/ span 2;
+    background-color: #f9f9f9;
+    outline-color: #bdbdbd;
+   }
+   ::placeholder{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #bdbdbd;
+   }
+   .form__button{
+    color: #ffffff;
+    background-color: #ffa62b;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px 40px;
+    border: 1px solid #ffa62b;
+    border-radius: 5px;
+    margin: 20px 0px 50px 0px;
+    transition: 1s;
+   }
+   .form__button:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffa62b;
+   }
+   .form__appointment-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4,auto);
+    gap: 20px;
+    justify-content: left;
+    padding: 40px 0px;
+   }
+   .appointment__container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 25%;
+    margin: 0 auto;
+   }
+   .appointment__cover{
+    background-image: url(img\background ContactUs.png);
+    background-position: center;
+    background-size: cover;
+    backgraund-repeat: no-repeat;
+    overflow: auto;
+   }
+   #resultName, #resultEmail, #resultMessage, #resultSelect, #resultDate, #resultTime{
+    width: 260px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Montserrat;
+    margin: 0;
+   }
+   #resultMessage{
+    width: 450px;
+    grid-column: 1 / span 2;
+   }
+   .form-footer__primery{
+    background-color: #ffffff;
+   }
+   .form__ContactUs{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 360px;
+    padding: 40px 0px;
+   }
+   .form__footer-head{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: var(--darkblue);
+   }
+   .form__footer-subtitle{
+   margin: 0;
+   color: var(--grey);
+   }
+   .form__footer-button{
+    background-color: var(--orange);
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 15px 40px;
+    transition: 1s;
+   }
+   .form__footer-button:hover{
+    transform: scale(1.2);
+   }
+   @media screen and (min-width:360px) and (max-width:768px){
+    .form__data{
+      display: flex;
+      flex-direction: column;
+    }
+    .form__textarea{
+      display: flex;
+      flex-direction: column;
+      padding: 16px 190px 100px 25px;
+    }
+    input.form__button{
+      margin: 40px 0px 0px 0px;
+    }
+    .form__appointment-grid{
+      display: flex;
+      flex-direction: column;
+    }
+    .appointment__container{
+      display: flex;
+      flex-direction: column;
+      max-width: 280px;
+      padding: 115px 0px 90px 0px;
+      margin: auto;
+    }
+  }
+  </style>
+  </head>   
+
+<body>
+  <section class="top-banner">
+    <div class="container">
+      <header class="header">
+  <a href="#KMarketer" class="homelogo">
+    <img src="img\KMarketer.svg" alt="Home logo" /></a>
+    <nav class="header-nav">
+
+  <ul class="nav-bar">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#product">Product</a></li>
+  <li><a href="#pricing">Pricing</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+    </nav>
+
+<ul class="nav-icons">
+  <li><a href="#search"><img src="img\icn search .icn-xs.svg" alt="Search icon"/> </a></li>
+  <li><a href="#cart"><img src="img\icn shopping-cart .icn-xs.svg" alt="Shopping-cart icon"/> </a></li>
+</ul>
+</header>
+
+<div class="content">
+  <h1 class="top-banner__headline">We Take Care of the Future</h1>
+  <h4 class="top-banner__describe">We know how large objects will act, but things on a small scale just do not act that way.</h4>
+
+  <div class="action-buttons">
+    <button type="button" class="button-getquote">Get Quote Now</button>
+    <button type="button" class="button-learn">Learn More</button>
+    </div>
+   </div>
+ </div>
+  </section>
+
+  <section class="why-us">
+    <div class="container">
+      <h2 class="section__title">WHY CHOOSE US</h2>
+      <p class="section__describe">Problems trying to resolve the conflict between 
+        the two major realms of Classical physics: Newtonian mechanics </p>
+
+        <div class="cards-grid">
+          <div class="cards">
+            <div class="cards__header">
+              <img src="img\briefcase img.svg" class="header__icons" alt="business briefcase image"/>
+              <h5>Digital Marketing</h5>
+            </div>
+            <p class="cards__content">the quick fox jumps over the lazy 
+              dog the quick fox jumps over the 
+              lazy dog
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="cards__header">
+              <img src="img\shop img.svg" class="header__icons" alt="shop image"/>
+              <h5>Digital Marketing</h5>
+            </div>
+            <p class="cards__content">the quick fox jumps over the lazy 
+              dog the quick fox jumps over the 
+              lazy dog
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="cards__header">
+              <img src="img\notebook img.svg" class="header__icons" alt="notebook image"/>
+              <h5>Business Growing</h5>
+            </div>
+            <p class="cards__content">the quick fox jumps over the lazy 
+              dog the quick fox jumps over the 
+              lazy dog
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="cards__header">
+              <img src="img\users img.svg" class="header__icons" alt="users image"/>
+              <h5>National top 50 firms</h5>
+            </div>
+            <p class="cards__content">the quick fox jumps over the lazy 
+              dog the quick fox jumps over the 
+              lazy dog
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="cards__header">
+              <img src="img\graph line img.svg" class="header__icons" alt="graph line image"/>
+              <h5>National top 50 firms</h5>
+              <p class="cards__content">the quick fox jumps over the lazy 
+                dog the quick fox jumps over the 
+                lazy dog
+              </p>
+            </div>
+
+            <div class="cards">
+              <div class="cards__header">
+                <img src="img\reward img.svg" class="header__icons" alt="reward image"/> 
+                <h5>Web Development</h5>
+              </div>
+              <p class="cards__content">the quick fox jumps over the lazy 
+                dog the quick fox jumps over the 
+                lazy dog
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+    <section class="best-business-service">
+      <div class="container">
+        <div class="video__content">
+          <h2 class="video__title">We are providing best business service.</h2>
+          <p class="video__subtitle">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="video">
+          <video class="video__play" width="877px" height="442px" poster="img\video.png" controls>
+           <source src="img\video play (2160p).mp4" type="video/mp4">
+           Your browser does not support the video tag.
+          </video>
+          <div class="video-button"><img src="img\button video.svg" alt="Video button"></div>
+        </div>
+      </div>
+    </section>
+
+     <section class="clients">
+      <div class="container">
+        <div class="clients__content">
+          <h2 class="clients__title">What Clients Say</h2>
+          <p class="clients__subtitle">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="cards-grid">
+          <div class="cards">
+            <div class="cards__content">
+              <img src="img\stars.svg" class="rating" alt="star rating img"/>
+              <h6 class="clients-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+              <img src="img\client woman1.png" class="clients-img" alt="client young woman"/>
+              <p class="clients-name">Regina Miles</p>
+              <h6 class="clients-job">Designer</h6>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-grid">
+              <div class="cards__content">
+                <img src="img\stars.svg" class="rating" alt="star rating img"/>
+              <h6 class="clients-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+              <img src="img\client woman2.png" class="clients-img" alt="client old woman"/>
+              <p class="clients-name">Regina Miles</p>
+              <h6 class="clients-job">Designer</h6>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="cards-grid">
+                <div class="cards__content">
+                  <img src="img\stars.svg" class="rating" alt="star rating img"/>
+                <h6 class="clients-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                <img src="img\client man.png" class="clients-img" alt="client man"/>
+                <p class="clients-name">Regina Miles</p>
+                <h6 class="clients-job">Designer</h6>
+                </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+     <section class="team">
+      <div class="container">
+        <div class="team__content">
+          <h2 class="team__title">Meet Our Team</h2>
+          <p class="team__subtitle">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="cards-grid">
+          <div class="cards">
+            <img src="img\team ceo.png" class="team-img" alt="ceo img"/>
+            <img src="img\CEO mob.png" class="team__img-mobile" alt="ceo img"/>
+            <div class="cards__content">
+              <h5 class="team__name">Ashley Fletcher</h5>
+              <h6 class="team__job">CEO</h6>
+              <div class="team__socials-icn">
+                <a href="#"><img src="img\facebook team.svg" class="team__socials" alt="facebook image"></a>
+                <a href="#"><img src="img\insta team.svg" class="team__socials" alt="instagram image"></a>
+                <a href="#"><img src="img\twitter team.svg" class="team__socials" alt="twitter image"></a>
+              </div>
+            </div>
+            </div>
+            
+            <div class="cards">
+            <img src="img\team consultant.png" class="team-img" alt="consultant img"/>
+            <img src="img\consultant mob.png" class="team__img-mobile" alt="consultant img"/>
+            <div class="cards__content">
+              <h5 class="team__name">Rodney Stratton</h5>
+              <h6 class="team__job">Consultant</h6>
+              <div class="team__socials-icn">
+                <a href="#"><img src="img\facebook team.svg" class="team__socials" alt="facebook image"></a>
+                <a href="#"><img src="img\insta team.svg" class="team__socials" alt="instagram image"></a>
+                <a href="#"><img src="img\twitter team.svg" class="team__socials" alt="twitter image"></a>
+              </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <img src="img\team CO Founder.png" class="team-img" alt="CO Founder img"/>
+              <img src="img\CO Founder mobile.png" class="team__img-mobile" alt="CO Founder img"/>
+              <div class="cards__content">
+                <h5 class="team__name">Avie Beaton</h5>
+              <h6 class="team__job">CO Founder</h6>
+              <div class="team__socials-icn">
+                <a href="#"><img src="img\facebook team.svg" class="team__socials" alt="facebook image"></a>
+                <a href="#"><img src="img\insta team.svg" class="team__socials" alt="instagram image"></a>
+                <a href="#"><img src="img\twitter team.svg" class="team__socials" alt="twitter image"></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <section class="appointment__cover">
+        <div class="appointment__container">
+          <h5 class="appointment__subtitle">Contact Us</h5>
+          <h2 class="appointment__title">Make an Appointment</h2>
+
+          <form class="form__appointment-grid">
+            <input type="text" class="form__data" name="fullname" placeholder="Full Name" required>
+            <input type="email" class="form__data" name="email" placeholder="example@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" required>
+            <p id="resultName"></p>
+            <p id="resultEmail"></p>
+
+            <select class="form__select" name="date">
+              <option value="">Please Select Day</option>
+              <option value="Mo">Monday</option>
+              <option value="Tu">Tuesday</option>
+              <option value="We">Wednesday</option>
+              <option value="Th">Thursday</option>
+              <option value="Fr">Friday</option>
+            </select>
+
+            <select class="form__select" name="time">
+              <option value="">Available Time</option>
+              <option value="9am">9am</option>
+              <option value="10am">10am</option>
+              <option value="11am">11am</option>
+              <option value="13pm">13pm</option>
+              <option value="15pm">15pm</option>
+              <option value="17pm">17pm</option>
+            </select>
+            <p id="resultDate"></p>
+            <p id="resultTime"></p>
+
+            <textarea class="form__textarea" name="message" placeholder="Message"></textarea>
+            <p id="resultMessage"></p>
+            <input class="form__button" type="submit" value="Book Appointment">
+          </form>
+        </div>
+     </section>
+
+     <section class="form-footer__primery">
+      <div class="container">
+        <form class="form__ContactUs">
+            <h3 class="form-footer__primery">Consulting Agency For Your Business</h3>
+            <p class="form__footer-subtitle">the quick fox jumps over the lazy dog</p>
+            <input class="form__footer-button" type="submit" value="Contact Us">
+        </form>
+      </div>
+     </section>
+
+  <footer class="footer">
+    <section class="footer__initial">
+      <div class="container">
+        <class="footer__content">
+          <a href="#KMarketer" class="footer__logo"> <img src="img\KMarketer.svg" alt="brand logo" class="logo__image"/></a>
+          <ul class="footer__socials">
+            <li>
+              <a href="#facebook" class="socials-link"><img src="img\facebook.svg" alt="facebook logo" class="socials__logo"/></a>
+            </li>
+            <li>
+              <a href="#instagram" class="socials-link"><img src="img\instagram.svg" alt="instagram logo" class="socials__logo"/></a>
+            </li>
+            <li>
+              <a href="#twitter" class="socials-link"><img src="img\twitter.svg" alt="twitter logo" class="socials__logo"/></a>
+            </li>
+            <li>
+              <a href="#youtube" class="socials-link"><img src="img\youtube.svg" alt="youtube logo" class="socials__logo"/></a>
+            </li>
+          </ul>
+          <hr class="footer__divider"></hr>
+          <div class="footer__main-content">
+            <nav class="footer__nav">
+
+              <div class="nav__block">
+                <h5 class="footer__title">Company Info</h5>
+                <ul class="nav__list">
+                  <li class="nav__list-item">
+                    <a href="#">About Us</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Career></a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">We are hiring</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="nav__block">
+                <h5 class="footer__title">Legal</h5>
+                <ul class="nav__list">
+                  <li class="nav__list-item">
+                    <a href="#">About Us</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Career</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">We are hiring</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="nav__block">
+                <h5 class="footer__title">Features</h5>
+                <ul class="nav__list">
+                  <li class="nav__list-item">
+                    <a href="#">Business Marketing</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">User Analytic</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Live Chat</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Unlimited Support</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="nav__block">
+                <h5 class="footer__title">Resources</h5>
+                <ul class="nav__list">
+                 <li class="nav__list-item">
+                  <a href="#">IOS & Android</a>
+                 </li>
+                 <li class="nav__list-item">
+                  <a href="#">Watch a Demo</a>
+                 </li>
+                 <li class="nav__list-item">
+                  <a href="#">Customers</a>
+                 </li>
+                 <li class="nav__list-item">
+                  <a href="#">API</a>
+                 </li>
+                </ul>
+              </div>
+            </nav>
+              <div class="footer__subscrition">
+                <h5 class="footer__title">Get In Touch</h5>
+                <form class="subscription__form" actions="submit">
+                  <input class="form__input" type="email" placeholder="Your Email"/>
+                  <input class="form__submit" type="submit" value="Subscribe"/>
+                </form>
+                <p class="title">Lorem impsum dolor amit</p>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer__secondary">
+      <div class="container">
+        <p class="footer__secondary-title">Made With Love By Figmaland All Right Reserved </p>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
